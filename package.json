@@ -7,7 +7,7 @@
     "setup": "npm i && cd ../client && npm i && ../server && npm i",
     "client": "cd client && npm start",
     "server": "cd server && npm start",
-    "start": "concurrently --kill-all \"npm run server\" \"npm run client\""
+    "start": "concurrently --kill-others \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
